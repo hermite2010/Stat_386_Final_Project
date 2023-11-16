@@ -20,13 +20,13 @@ Statutory Rape,CU,0,0,0
 Domestic Violence,CU,8,8,12
 Dating Violence,CU,8,13,13
 Stalking,CU,23,15,16
-Rape,Iowa,10,22,18
-Fondling,Iowa,4,7,6
-Incest,Iowa,0,0,0
-Statutory Rape,Iowa,0,0,0
-Domestic Violence,Iowa,5,2,6
-Dating Violence,Iowa,8,5,6
-Stalking,Iowa,22,32,21
+Rape,ISU,10,22,18
+Fondling,ISU,4,7,6
+Incest,ISU,0,0,0
+Statutory Rape,ISU,0,0,0
+Domestic Violence,ISU,5,2,6
+Dating Violence,ISU,8,5,6
+Stalking,ISU,22,32,21
 Rape,KSU,5,14,26
 Fondling,KSU,1,18,6
 Incest,KSU,0,0,0
@@ -48,6 +48,13 @@ Statutory Rape,OSU,0,0,0
 Domestic Violence,OSU,8,6,3
 Dating Violence,OSU,4,2,7
 Stalking,OSU,9,12,16
+Rape,OU,33,19,20
+Fondling,OU,13,11,16
+Incest,OU,0,0,0
+Statutory Rape,OU,0,0,1
+Domestic Violence,OU,15,21,16
+Dating Violence,OU,4,7,10
+Stalking,OU,9,8,19
 Rape,TCU,17,22,12
 Fondling,TCU,4,8,4
 Incest,TCU,0,0,0
@@ -76,6 +83,13 @@ Statutory Rape,UH,1,0,0
 Domestic Violence,UH,8,12,10
 Dating Violence,UH,14,14,18
 Stalking,UH,34,29,18
+Rape,UTA,24,21,28
+Fondling,UTA,12,18,18
+Incest,UTA,0,0,0
+Statutory Rape,UTA,0,0,0
+Domestic Violence,UTA,10,4,17
+Dating Violence,UTA,7,9,7
+Stalking,UTA,18,19,31
 Rape,WV,9,17,21
 Fondling,WV,4,12,17
 Incest,WV,0,0,0
