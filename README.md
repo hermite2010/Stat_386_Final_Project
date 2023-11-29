@@ -1,1 +1,2 @@
 # Stat_386_Final_Project
+This is my final project for Stat 386. I have collected data from the 14 schools in the Big 12 (as of November 2023) and I am comparing the sexual assault crimes and crimes against women from the schools to one another. Included in this repository are all the PDF's of each of the Big 12 School's fire and safety reports that include the crimes mentioned preivously. There is also code in how to get the data from the pdfs as well as code in visualizing the data. 
