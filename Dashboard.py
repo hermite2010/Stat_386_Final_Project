@@ -13,7 +13,10 @@ df['Year'] = df['Year'].astype(str)
 # Create a sidebar for user input
 x_axis = st.sidebar.selectbox('Select X axis', df.columns)
 
-df.sort_values(by=x_axis, inplace=True, ascending=False)
+df.sort_values(by=x_axis, inplace=True, ascending=True)
+
+# Allow the user to select the schools to display
+schools = st.sidebar.multiselect('Select schools to display', df['School'].unique())
 
 # Plot the data using the selected X axis on a bar plot
 fig = px.bar(df, x=x_axis, y='School', color='Year')
