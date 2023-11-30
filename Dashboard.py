@@ -14,7 +14,7 @@ df['Year'] = df['Year'].astype(str)
 x_axis = st.sidebar.selectbox('Select X axis', df.columns)
 
 # Plot the data using the selected X axis on a bar plot
-fig = px.bar(df, x=x_axis, y='School', color='Year')
+fig = px.bar(df, x=x_axis, y='School', color='Year', order=x_axis)
 st.plotly_chart(fig)
 
 
