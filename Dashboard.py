@@ -8,6 +8,8 @@ import seaborn as sns
 st.title('Sexual Crimes in the Big Twelve')
 df = pd.read_csv('SexOffensePlotData.csv')
 
+df['Year'] = df['Year'].astype(str)
+
 # Create a sidebar for user input
 x_axis = st.sidebar.selectbox('Select X axis', df.columns)
 
