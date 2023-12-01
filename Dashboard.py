@@ -10,8 +10,15 @@ df = pd.read_csv('SexOffensePlotData.csv')
 
 df['Year'] = df['Year'].astype(str)
 
+crimes = list(df.columns)
+crimes.remove('School')
+crimes.remove('Year')
+crimes.remove('Enrollment')
+crimes.remove('Religious')
+
+
 # Create a dropdown for user input
-x_axis = st.selectbox('Select X axis', df.columns)
+x_axis = st.selectbox('Select X axis', crimes)
 
 df.sort_values(by=x_axis, inplace=True, ascending=True)
 
@@ -25,9 +32,9 @@ st.plotly_chart(fig)
 
 # Plot a line graph for a single school over the years
 selected_school = st.selectbox('Select a school', schools)
-y_axis = st.selectbox('Select Y axis', df.columns)
+y_axis = st.selectbox('Select Y axis', crimes)
 df_single_school = df[df['School'] == selected_school]
-fig_line = px.line(df_single_school, x='Year', y=y_axis)
+fig_line = px.line(df_single_school, x=df['Year'], y=y_axis)
 st.plotly_chart(fig_line)
 
 
