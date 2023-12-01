@@ -41,6 +41,13 @@ fig_line = px.line(df_single_school, x='Year', y=y_axis)
 st.plotly_chart(fig_line)
 
 
+# Box plot comparing religious and non-religious schools based on the selected variable
+selected_variable = st.selectbox('Select a variable', crimes)
+df_religious = df[df['Religious'] == 'Yes']
+df_non_religious = df[df['Religious'] == 'No']
+fig_box = px.box(df, x='Religious', y=selected_variable)
+st.plotly_chart(fig_box)
+
 
 
 
