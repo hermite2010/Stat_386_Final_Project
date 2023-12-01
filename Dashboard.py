@@ -24,12 +24,12 @@ df.sort_values(by=['Year',x_axis], inplace=True, ascending=True)
 
 # Allow the user to select the schools to display
 schools = st.multiselect('Select schools to display', df['School'].unique(), default=list(df['School'].unique())) 
-df = df[df['School'].isin(schools)]
+df_barplot = df[df['School'].isin(schools)]
 # Allow the user to select the years to display
 #years = st.multiselect('Select years to display', df['Year'].unique(), default=list(df['Year'].unique()))
 
 # Plot the data using the selected X axis on a bar plot
-fig = px.bar(df, x=x_axis, y='School', color='Year', orientation='h', barmode='group')
+fig = px.bar(df_barplot, x=x_axis, y='School', color='Year', orientation='h', barmode='group')
 st.plotly_chart(fig)
 
 # Plot a line graph for a single school over the years
